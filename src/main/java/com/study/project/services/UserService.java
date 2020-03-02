@@ -10,7 +10,7 @@ import com.study.project.entities.User;
 import com.study.project.repository.UserRepository;
 
 @Service
-public class UserServices {
+public class UserService {
 
 	@Autowired
 	private UserRepository userRepository;
@@ -30,18 +30,7 @@ public class UserServices {
 		userRepository.save(user);
 	}
 	
-//	public void update(long id, User user) {
-//		Optional<User> obj = userRepository.findById(id).map(temp -> {
-//															temp.setId(user.getId()); 
-//															temp.setName(user.getName());
-//															temp.setEmail(user.getEmail());
-//															temp.setPhone(user.getPhone());
-//															temp.setPassword(user.getPassword());
-//															
-//		userRepository.save(temp);
-//															
-//		});
-//	}
+
 }
 
 
